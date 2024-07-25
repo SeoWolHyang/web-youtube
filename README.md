@@ -25,3 +25,9 @@ rafce
 2. git status
 3. git commit -m "원하는 메시지"
 4. git push -u origin main
+
+### Lazy ###
+
+1. 동기적(Synchronous) : 작업이 순차적으로 실행되며, 이전 작업이 끝나야 다음 작업 수행
+
+2. 비동기적(Asynchronous) : 작업이 독립적으로 실행되며, 이전 작업이 끝나지 않아도 작업 수행
