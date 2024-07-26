@@ -4,7 +4,7 @@ import Main from '../components/section/Main';
 
 const Website = () => {
   return (
-    <Main>
+    <Main title="웹사이트" description="웹사이트 페이지입니다.">
       Website
     </Main>
   )
