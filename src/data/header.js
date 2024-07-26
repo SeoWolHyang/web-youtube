@@ -1,6 +1,6 @@
 import { PiVideoFill } from "react-icons/pi";
 import { FaStar } from "react-icons/fa6";
-import { MdDeveloperBoard } from "react-icons/md";
+import { IoMusicalNotesSharp } from "react-icons/io5";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { MdAnimation } from "react-icons/md";
 import { GrDocumentUser } from "react-icons/gr";
@@ -22,9 +22,9 @@ export const headerMenus = [
         src: "/today"
     },
     {
-        title: "추천 개발자",
-        icon: <MdDeveloperBoard/>,
-        src: "/developer"
+        title: "추천 음악",
+        icon: <IoMusicalNotesSharp />,
+        src: "/music"
     },
     {
         title: "웹디자인",
