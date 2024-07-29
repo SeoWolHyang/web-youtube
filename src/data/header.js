@@ -1,9 +1,9 @@
 import { PiVideoFill } from "react-icons/pi";
 import { FaStar } from "react-icons/fa6";
 import { IoMusicalNotesSharp } from "react-icons/io5";
-import { MdOutlineDesignServices } from "react-icons/md";
-import { MdAnimation } from "react-icons/md";
-import { GrDocumentUser } from "react-icons/gr";
+import { MdLocalMovies } from "react-icons/md";
+import { GiPropellerBeanie } from "react-icons/gi";
+import { ImBook } from "react-icons/im";
 import { FaYoutube } from "react-icons/fa";
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillYoutube } from "react-icons/ai";
@@ -27,19 +27,19 @@ export const headerMenus = [
         src: "/music"
     },
     {
-        title: "웹디자인",
-        icon: <MdOutlineDesignServices/>,
-        src: "/webd"
+        title: "추천 영화",
+        icon: <MdLocalMovies />,
+        src: "/movie"
     },
     {
-        title: "GSAP",
-        icon: <MdAnimation/>,
-        src: "/gsap"
+        title: "추천 도서",
+        icon: <ImBook />,
+        src: "/book"
     },
     {
-        title: "포트폴리오 사이트",
-        icon: <GrDocumentUser/>,
-        src: "/port"
+        title: "애니 추천",
+        icon: <GiPropellerBeanie />,
+        src: "anime"
     },
     {
         title: "유튜브 사이트",
