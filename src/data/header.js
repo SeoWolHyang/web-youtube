@@ -39,7 +39,7 @@ export const headerMenus = [
     {
         title: "애니 추천",
         icon: <GiPropellerBeanie />,
-        src: "anime"
+        src: "/anime"
     },
     {
         title: "유튜브 사이트",
