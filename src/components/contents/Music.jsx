@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import { musicText } from '../../data/music'
 import { Link } from 'react-router-dom'
 
 import 'swiper/css';
@@ -7,7 +6,7 @@ import 'swiper/css/navigation';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-const Music = () => {
+const Music = ({videos, title, id, to}) => {
 
   const [loading, setLoading] = useState(true);
 
@@ -20,8 +19,8 @@ const Music = () => {
   const  videoClass = loading ? 'isLoading' : 'isLoaded';
 
   return (
-    <section id='music' className={videoClass}>
-      <h2>🎧추천 음악을 소개합니다.</h2>
+    <section id={id} className={videoClass}>
+      <h2>{title}</h2>
       <div className='music__inner'>
         <Swiper
           slidesPerView={4}
@@ -64,11 +63,11 @@ const Music = () => {
             }
           }}
         >
-          {musicText.map((music, key)=>(
+          {videos.map((music, key)=>(
             <SwiperSlide key={key}>
               <div className='music'>
                 <div className='music__img play__icon'>
-                  <Link to={`/channel/${music.channelId}`}>
+                  <Link to={`${to}${music.channelId}`}>
                     <img src={music.img} alt={music.name}/>
                   </Link>
                 </div>
